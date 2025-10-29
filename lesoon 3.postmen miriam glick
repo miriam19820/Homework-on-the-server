@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "55e92213-5b89-4ecc-9bae-1d8da9d7bead",
+		"name": "lesoon 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49468234"
+	},
+	"item": [
+		{
+			"name": "1_saveNewValue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/store?name=X&value=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "X"
+						},
+						{
+							"key": "value",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2_changeValue",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/store?name=X&value=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "X"
+						},
+						{
+							"key": "value",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3_deleteValue",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/store?name=X",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "X"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4_getAllValues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/allValues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"allValues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5_getPIValue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/value/PI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"value",
+						"PI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6_calculateAdd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/add?num1=PI&num2=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"add"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "PI"
+						},
+						{
+							"key": "num2",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7_calculateSubtract",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/subtract?num1=10&num2=PI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"subtract"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "10"
+						},
+						{
+							"key": "num2",
+							"value": "PI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8_calculateMultiply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/multiply?num1=PI&num2=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"multiply"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "PI"
+						},
+						{
+							"key": "num2",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9_calculateDivide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/divide?num1=10&num2=PI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"divide"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "10"
+						},
+						{
+							"key": "num2",
+							"value": "PI"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10_errorValueNotExist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/value/AAA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"value",
+						"AAA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11_errorDivideByZero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/divide?num1=10&num2=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"divide"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "10"
+						},
+						{
+							"key": "num2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
