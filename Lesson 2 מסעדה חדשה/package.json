@@ -1,18 +1,14 @@
 {
-  "name": "restaurant",
+  "name": "restaurant-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "App.ts",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "rest" : "npx ts-node ./src/App.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+    "start": "node --loader ts-node/esm src/App.ts",
+    "build": "tsc"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
   }
 }
